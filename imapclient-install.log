@@ -1,0 +1,32 @@
+Requirement already satisfied (use --upgrade to upgrade): imapclient in /Library/Python/2.7/site-packages
+Cleaning up...
+  Removing temporary dir /private/var/folders/tx/xzynq1ps73g25jrfs2jkyst40000gn/T/pip_build_jsliang...
+------------------------------------------------------------
+/usr/local/bin/pip run on Wed Apr 27 01:48:49 2016
+Requirement already satisfied (use --upgrade to upgrade): imapclient in /Library/Python/2.7/site-packages
+Cleaning up...
+  Removing temporary dir /private/tmp/pip_build_root...
+------------------------------------------------------------
+/usr/local/bin/pip run on Wed Apr 27 01:48:55 2016
+Getting page https://pypi.python.org/simple/imapclient/
+URLs to search for versions for imapclient in /Library/Python/2.7/site-packages:
+* https://pypi.python.org/simple/imapclient/
+Analyzing links from page https://pypi.python.org/simple/imapclient/
+  Found link https://pypi.python.org/packages/19/e9/b80a8a9ce67583611b77df47dc782aa319af9e9e1b72e8f3970fbbe82f92/IMAPClient-0.13.zip#md5=11fe09e8d5991c6ae43e1d7799261614 (from https://pypi.python.org/simple/imapclient/), version: 0.13
+  Found link https://pypi.python.org/packages/4a/d7/f51a20a372c0326efab3978bc51df2bd4dc79e2fbfd41ce1991092156b4b/IMAPClient-0.11.zip#md5=6f2708da8d9ef4a024f82b2f4bc8f63c (from https://pypi.python.org/simple/imapclient/), version: 0.11
+  Found link https://pypi.python.org/packages/52/e5/4c4bbee466b8efcb223ff89b69861a63bf4ed947c258a4b9e5375727d9a8/IMAPClient-1.0.0.tar.gz#md5=3ab4924e230c2995eda31c12e23c9cff (from https://pypi.python.org/simple/imapclient/), version: 1.0.0
+  Found link https://pypi.python.org/packages/62/57/e516b89f2e7c44aec6e75f9f201df0c5229f1e823e3b7dbad4f604c5fc67/IMAPClient-0.10.2.tar.gz#md5=3500a41722278c3a4e39f0f954406721 (from https://pypi.python.org/simple/imapclient/), version: 0.10.2
+  Found link https://pypi.python.org/packages/7f/8b/45890452836c5a3d6e4097401bcd01e8b7de22087c546526f8d52f4486c0/IMAPClient-1.0.1.tar.gz#md5=ff508fbed5745725362a2b292e4503a1 (from https://pypi.python.org/simple/imapclient/), version: 1.0.1
+  Found link https://pypi.python.org/packages/94/20/6db5570fea83cc7896e312304bc94e3ba40a3fcb680c0e629788342beac9/IMAPClient-0.12.zip#md5=46424281f3c8a13eaeb0300907ea6674 (from https://pypi.python.org/simple/imapclient/), version: 0.12
+  Found link https://pypi.python.org/packages/9f/f1/ada9564e804e3e7aa1fc12e384ca00f0410d97b6b1c9d08070079e5aefde/IMAPClient-1.0.0-py2.py3-none-any.whl#md5=07da5876376e59ee45172d519b599d68 (from https://pypi.python.org/simple/imapclient/), version: 1.0.0
+  Found link https://pypi.python.org/packages/af/17/03ec2d47f5407f66bf84ece9e551decc40c7e25acd53e7f464f7b575fefb/IMAPClient-0.12.tar.gz#md5=bb7dc4cb2b4ab82ebc73e0f01cb60e1d (from https://pypi.python.org/simple/imapclient/), version: 0.12
+  Found link https://pypi.python.org/packages/bc/1d/da012bcb5f99635247846783fffe851cacef74583fd65dee68624eaccdd0/IMAPClient-1.0.1.zip#md5=f4c7908244b30c90e08aa7484b6f7cba (from https://pypi.python.org/simple/imapclient/), version: 1.0.1
+  Found link https://pypi.python.org/packages/be/dc/2c78c213b15a1ba80916bae10af6ca4f5bd5e5cfe9146f6dab6a2f57e58d/IMAPClient-0.11.tar.gz#md5=d0565603a2cd7c9239086626339690a4 (from https://pypi.python.org/simple/imapclient/), version: 0.11
+  Found link https://pypi.python.org/packages/c5/1a/1e57478fd98658eba87a9520388ecc92d0015582faa02e1e1fa49f718e5b/IMAPClient-1.0.0.zip#md5=ba9e04e293c7f4201bc49353fc38a80a (from https://pypi.python.org/simple/imapclient/), version: 1.0.0
+  Found link https://pypi.python.org/packages/c7/c6/040a8e2b52cff56e6796efc793a573359ab8de98db33da7dbe12004cdba1/IMAPClient-0.10.2.zip#md5=b94ff24632da55164ec05ad12d4ecd39 (from https://pypi.python.org/simple/imapclient/), version: 0.10.2
+  Found link https://pypi.python.org/packages/d0/52/a79d9b8f2389bcb0d4c5973620497835321bbb7c6e7d53f63e315d1ea524/IMAPClient-0.13.tar.gz#md5=b980e22489c114c45df6f028297f2e25 (from https://pypi.python.org/simple/imapclient/), version: 0.13
+  Found link https://pypi.python.org/packages/dd/ea/1b48e3e8a05132ec8ab234a236a8176cae4e2b361bac12dbd98d0a37051d/IMAPClient-1.0.1-py2.py3-none-any.whl#md5=77cfa8010cd3fe88506ea91ee6ff98e0 (from https://pypi.python.org/simple/imapclient/), version: 1.0.1
+Installed version (1.0.1) is most up-to-date (past versions: 1.0.1, 1.0.1, 1.0.1, 1.0.0, 1.0.0, 1.0.0, 0.13, 0.13, 0.12, 0.12, 0.11, 0.11, 0.10.2, 0.10.2)
+Requirement already up-to-date: imapclient in /Library/Python/2.7/site-packages
+Cleaning up...
+  Removing temporary dir /private/tmp/pip_build_root...
