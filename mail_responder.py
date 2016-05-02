@@ -125,7 +125,8 @@ class MyCallback(Callback):
         questions = map(lambda x: re.split(r'[.!]', x), questions)
         questions = filter(lambda x: len(x) > 0, questions)
         questions = map(lambda x: x[-1], questions)
-        print questions
+        if len(questions) == 0:
+        	return
         for q in questions:
             body += q+ "?" 
             body += "\n\n"
