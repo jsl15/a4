@@ -70,15 +70,22 @@ class MyCallback(Callback):
     rules = {'To': [r'jessicasliang@gmail.com|jessica_liang@brown.edu']}
     def should_reject_email(self):
         sender = parse_address(self.message['From'])
-        if count[sender] > 4 and sender_avg_rt[sender] < 0:
+        if sender == 'jessica_liang@brown.edu':
             return True
-        elif len(self.message['To'].split(",")) > 0:
+        if sender in count and sender in sender_avg_rt:
+            if count[sender] > 4 and sender_avg_rt[sender] < 0:
+                print "count rejected"
+                return True
+        elif len(self.message['To'].split(",")) > 3:
+            print "to rejected"
             return True
         return False
 
     def send_prediction(self):
         prediction = get_prediction(self.message)
         print prediction
+        if prediction == 'NOREPLY':
+            return
         new_message = email.message.Message()
         new_message['Subject'] = "[AUTO-REPLY] Re: " + self.message['subject']
         new_message['From'] = 'jessicasliang@gmail.com'
@@ -94,9 +101,8 @@ class MyCallback(Callback):
         conn.append('[Gmail]/Drafts', '', imaplib.Time2Internaldate(time.time()), str(new_message))
     
     def draft_response(self):
-        body = self.get_email_body()
-        sections = body.split("\n\r")
-        print sections
+        mail_body = self.get_email_body()
+        sections = mail_body.split("\n\r")
         last_line = sections[-1]
         words = last_line.split(" ")
         sender = "" 
@@ -114,10 +120,20 @@ class MyCallback(Callback):
         # if we found a sender then add a greeting
         if sender != "":
             body += "Hi " + sender +"!\n\n"
-
+        questions = mail_body.split("?")
+        questions = questions[:len(questions)-1]
+        questions = map(lambda x: re.split(r'[.!]', x), questions)
+        questions = filter(lambda x: len(x) > 0, questions)
+        questions = map(lambda x: x[-1], questions)
+        print questions
+        for q in questions:
+            body += q+ "?" 
+            body += "\n\n"
+            print q
         # sign off
         body += "\n\n\n"
         body += "-Jessica"
+        print body
         new_message.set_payload(body)
 
         conn.append('[Gmail]/Drafts', '', imaplib.Time2Internaldate(time.time()), str(new_message))
@@ -126,6 +142,7 @@ class MyCallback(Callback):
 
    
     def trigger(self):
+        print self.message['Subject']
         if self.should_reject_email():
             print "REJECTED"
             return
